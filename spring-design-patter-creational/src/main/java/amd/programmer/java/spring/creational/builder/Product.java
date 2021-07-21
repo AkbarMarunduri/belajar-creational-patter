@@ -2,7 +2,6 @@ package amd.programmer.java.spring.creational.builder;
 
 import lombok.Builder;
 
-
 //@builder untuk membuat builder secara otomatis dengan lombok
 @Builder
 public class Product {
@@ -10,12 +9,15 @@ public class Product {
     private String nama;
     private String sku;
     private Long price;
+    private Category category;
 
-    public Product(String id, String nama, String sku, Long price) {
+
+    public Product(String id, String nama, String sku, Long price, Category category) {
         this.id = id;
         this.nama = nama;
         this.sku = sku;
         this.price = price;
+        this.category = category;
     }
 
     @Override
@@ -25,6 +27,7 @@ public class Product {
                 ", nama='" + nama + '\'' +
                 ", sku='" + sku + '\'' +
                 ", price=" + price +
+                ", category=" + category +
                 '}';
     }
 
@@ -60,4 +63,11 @@ public class Product {
         this.price = price;
     }
 
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 }

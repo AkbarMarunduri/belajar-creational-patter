@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Scope;
 @SpringBootApplication
 public class PrototypeAppication {
 
-    //pada prototype setelah @Bean harus ditambahkan scope
+    //pada prototype setelah @Bean harus ditambahkan @Scope agar objek tidak menjadi singleton
     @Bean
     @Scope("prototype")
     public Employe employeStaff() {

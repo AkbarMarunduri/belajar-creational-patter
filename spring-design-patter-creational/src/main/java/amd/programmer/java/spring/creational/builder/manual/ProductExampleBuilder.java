@@ -7,19 +7,19 @@ public class ProductExampleBuilder {
     private String sku;
     private Long price;
 
-    public ProductExampleBuilder setId(String id) {
+    public ProductExampleBuilder id(String id) {
         this.id = id;
         return this;
     }
-    public ProductExampleBuilder setNama(String nama) {
+    public ProductExampleBuilder nama(String nama) {
         this.nama = nama;
         return this;
     }
-    public ProductExampleBuilder setsku(String sku) {
+    public ProductExampleBuilder sku(String sku) {
         this.sku = sku;
         return this;
     }
-    public ProductExampleBuilder setPrice(Long price) {
+    public ProductExampleBuilder price(Long price) {
         this.price = price;
         return this;
     }
